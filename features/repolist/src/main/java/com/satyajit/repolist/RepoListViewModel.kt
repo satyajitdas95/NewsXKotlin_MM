@@ -23,7 +23,7 @@ class RepoListViewModel @Inject constructor(
 
     private fun fetchRepoList(){
         viewModelScope.launch {
-            repoListUseCase.execute(RepoListUseCase.Params(userName = "kamrul3288")).collect{response->
+            repoListUseCase.execute(RepoListUseCase.Params(userName = "satyajit")).collect{response->
                 when(response){
                     is Result.Error -> _repoListUiState.value  = RepoListUiState.Error(response.message)
                     is Result.Loading -> _repoListUiState.value  = RepoListUiState.Loading

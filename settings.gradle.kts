@@ -31,3 +31,4 @@ include(":core:ui")
 include(":features:repolist")
 include(":features:profile")
 
+include(":features:splash")

@@ -1,7 +1,7 @@
 @Suppress("DSL_SCOPE_VIOLATION")
 plugins {
-    alias(libs.plugins.iamkamrul.android.library)
-    alias(libs.plugins.iamkamrul.android.hilt)
+    alias(libs.plugins.satyajit.android.library)
+    alias(libs.plugins.satyajit.android.hilt)
 }
 android {
     namespace = "com.satyajit.data"

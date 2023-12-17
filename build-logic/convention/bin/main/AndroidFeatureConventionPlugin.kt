@@ -11,9 +11,9 @@ class AndroidFeatureConventionPlugin : Plugin<Project> {
     override fun apply(target: Project) {
         with(target) {
             pluginManager.apply {
-                apply("iamkamrul.android.library")
-                apply("iamkamrul.android.hilt")
-                apply("iamkamrul.android.navigation")
+                apply("satyajit.android.library")
+                apply("satyajit.android.hilt")
+                apply("satyajit.android.navigation")
             }
             extensions.configure<LibraryExtension> {
                 defaultConfig {
@@ -52,10 +52,6 @@ class AndroidFeatureConventionPlugin : Plugin<Project> {
                 add("implementation", libs.findLibrary("log.timber").get())
                 add("implementation", libs.findLibrary("dimension.sdp").get())
                 add("implementation", libs.findLibrary("dimension.ssp").get())
-
-                add("implementation", libs.findLibrary("kamrul3288.viewstate").get())
-                add("implementation", libs.findLibrary("kamrul3288.customview").get())
-                add("implementation", libs.findLibrary("kamrul3288.dateced").get())
 
                 add("implementation", libs.findLibrary("kotlinx.coroutines.android").get())
                 add("implementation", libs.findLibrary("gson").get())

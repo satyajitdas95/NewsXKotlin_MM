@@ -1,6 +1,6 @@
 @Suppress("DSL_SCOPE_VIOLATION")
 plugins {
-    alias(libs.plugins.iamkamrul.android.library)
+    alias(libs.plugins.satyajit.android.library)
 }
 
 android {

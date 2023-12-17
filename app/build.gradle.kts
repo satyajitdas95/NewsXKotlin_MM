@@ -1,8 +1,8 @@
 @Suppress("DSL_SCOPE_VIOLATION")
 plugins {
-    alias(libs.plugins.iamkamrul.android.application)
-    alias(libs.plugins.iamkamrul.android.hilt)
-    alias(libs.plugins.iamkamrul.android.application.compose)
+    alias(libs.plugins.satyajit.android.application)
+    alias(libs.plugins.satyajit.android.hilt)
+    alias(libs.plugins.satyajit.android.application.compose)
 }
 
 android {
@@ -54,6 +54,7 @@ dependencies {
 
     implementation(projects.features.repolist)
     implementation(projects.features.profile)
+    implementation(projects.features.splash)
 
     implementation(libs.androidx.compose.activity)
     implementation(libs.androidx.compose.navigation)

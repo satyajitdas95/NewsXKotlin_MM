@@ -24,50 +24,50 @@ dependencies {
 gradlePlugin{
     plugins{
         register("androidApplication") {
-            id = "iamkamrul.android.application"
+            id = "satyajit.android.application"
             implementationClass = "AndroidApplicationConventionPlugin"
         }
         register("androidApplicationCompose") {
-            id = "iamkamrul.android.application.compose"
+            id = "satyajit.android.application.compose"
             implementationClass = "AndroidApplicationComposeConventionPlugin"
         }
 
         register("androidLibrary") {
-            id = "iamkamrul.android.library"
+            id = "satyajit.android.library"
             implementationClass = "AndroidLibraryConventionPlugin"
         }
         register("androidLibraryCompose") {
-            id = "iamkamrul.android.library.compose"
+            id = "satyajit.android.library.compose"
             implementationClass = "AndroidLibraryComposeConventionPlugin"
         }
 
         register("androidFeatureCompose") {
-            id = "iamkamrul.android.feature.compose"
+            id = "satyajit.android.feature.compose"
             implementationClass = "AndroidFeatureComposeConventionPlugin"
         }
 
         register("androidRoom") {
-            id = "iamkamrul.android.room"
+            id = "satyajit.android.room"
             implementationClass = "AndroidRoomConventionPlugin"
         }
 
         register("androidHilt") {
-            id = "iamkamrul.android.hilt"
+            id = "satyajit.android.hilt"
             implementationClass = "AndroidHiltConventionPlugin"
         }
 
         register("androidFirebase") {
-            id = "iamkamrul.android.application.firebase"
+            id = "satyajit.android.application.firebase"
             implementationClass = "AndroidApplicationFirebaseConventionPlugin"
         }
 
         register("androidRetrofit") {
-            id = "iamkamrul.android.retrofit"
+            id = "satyajit.android.retrofit"
             implementationClass = "AndroidRetrofitConventionPlugin"
         }
 
         register("jvmLibrary") {
-            id = "iamkamrul.jvm.library"
+            id = "satyajit.jvm.library"
             implementationClass = "JvmLibraryConventionPlugin"
         }
     }

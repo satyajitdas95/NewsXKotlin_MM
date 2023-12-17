@@ -24,7 +24,7 @@ class ProfileViewModel @Inject constructor(
 
     private fun fetchProfile() {
         viewModelScope.launch {
-            profileUseCase.execute(ProfileUseCase.Params(userName = "kamrul3288"))
+            profileUseCase.execute(ProfileUseCase.Params(userName = "satyajit"))
                 .collect { response ->
                     when (response) {
                         is Result.Error -> _profileUiState.value =

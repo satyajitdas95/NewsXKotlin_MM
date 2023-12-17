@@ -11,9 +11,9 @@ class AndroidFeatureComposeConventionPlugin : Plugin<Project> {
     override fun apply(target: Project) {
         with(target) {
             pluginManager.apply {
-                apply("iamkamrul.android.library")
-                apply("iamkamrul.android.library.compose")
-                apply("iamkamrul.android.hilt")
+                apply("satyajit.android.library")
+                apply("satyajit.android.library.compose")
+                apply("satyajit.android.hilt")
             }
             extensions.configure<LibraryExtension> {
                 defaultConfig {
@@ -34,7 +34,7 @@ class AndroidFeatureComposeConventionPlugin : Plugin<Project> {
                 add("implementation", libs.findLibrary("androidx.lifecycle.runtimeCompose").get())
                 add("implementation", libs.findLibrary("androidx.lifecycle.viewModelCompose").get())
                 add("implementation", libs.findLibrary("log.timber").get())
-                add("implementation", libs.findLibrary("kamrul3288.dateced").get())
+                add("implementation", libs.findLibrary("satyajit.dateced").get())
                 add("implementation", libs.findLibrary("kotlinx.coroutines.android").get())
 
 
